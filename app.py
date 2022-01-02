@@ -418,7 +418,7 @@ def webhook_handler():
         response = machine.advance(event)
 
         if response == False:
-            send_text_message(event.reply_token, "Enter home for help")
+            send_text_message(event.reply_token, "Enter home or press the button for help ")
 
     return "OK"
 
